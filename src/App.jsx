@@ -89,7 +89,7 @@ const App = () => {
 
   const [team , setTeam] = useState ([]); 
 
-  const [money , setMoney] = useState(100);
+  const [money , setMoney] = useState(30);
 
   const fighterAdding = (newFighter) => {
     // update money
@@ -108,7 +108,7 @@ const App = () => {
   const handleAddFighter = (newFighter) => {
 
     // check if there's enough money
-    money < newFighter.price ? console.log("Not enough money") : fighterAdding(newFighter);
+    money < newFighter.price ? window.alert("Not enough money") : fighterAdding(newFighter);
   }
 
 
