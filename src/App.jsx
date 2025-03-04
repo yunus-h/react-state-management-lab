@@ -89,7 +89,7 @@ const App = () => {
 
   const [team , setTeam] = useState ([]); 
 
-  const [money , setMoney] = useState(30);
+  const [money , setMoney] = useState(100);
 
   const fighterAdding = (newFighter) => {
     // update money
